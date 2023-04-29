@@ -1,0 +1,21 @@
+package Transporte;
+
+public class VehiculoDriver {
+    public static void main(String[] args) {
+        camion camion1 = new camion("Diesel", 3);
+        System.out.println(camion1);
+        System.out.println(camion1.encender());
+        camion1.avanzar();
+        camion1.frenar();
+        System.out.println(camion1.apagar());
+        System.out.println("-----motocicleta-----");
+        Motocicleta moto = new Motocicleta(150, "yamaha");
+        System.out.println(moto);
+        moto.encender();
+        moto.avanzar();
+        moto.HacerCaballito();
+        moto.frenar();
+        moto.apagar();
+
+    }
+}
